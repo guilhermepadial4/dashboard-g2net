@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Chamados TI — Julho 2026 - G2NET</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hd-left">
+        <img
+          class="hd-logo"
+          src="Logo_g2-removebg.png"
+          alt="G2NET Informática"
+        />
+        <div class="hd-divider"></div>
+        <div class="hd-text">
+          <h1>Dashboard de Chamados — TI</h1>
+          <p>Acompanhamento de atendimentos · Equipe de Suporte Técnico</p>
+        </div>
+      </div>
+      <div class="period-pill">Período: <span>Julho 2026</span></div>
+    </header>
+
+    <div class="wrap">
+      <div class="sec-label">Visão Geral de Julho</div>
+      <div class="kpi-row">
+        <div class="kpi c1">
+          <div class="kpi-ico">🎫</div>
+          <div class="kpi-lbl">Total de Chamados</div>
+          <div class="kpi-val" id="kTotal">—</div>
+          <div class="kpi-sub">apenas mês de julho</div>
+        </div>
+        <div class="kpi c2">
+          <div class="kpi-ico">✅</div>
+          <div class="kpi-lbl">Taxa de Resolução</div>
+          <div class="kpi-val" id="kTaxa">—</div>
+          <div class="kpi-sub">chamados finalizados</div>
+        </div>
+        <div class="kpi c3">
+          <div class="kpi-ico">⏱️</div>
+          <div class="kpi-lbl">Horas Investidas</div>
+          <div class="kpi-val" id="kHoras">—</div>
+          <div class="kpi-sub">soma do mês</div>
+        </div>
+        <div class="kpi c4">
+          <div class="kpi-ico">👨‍💻</div>
+          <div class="kpi-lbl">Analista mais ativo</div>
+          <div
+            class="kpi-val"
+            style="font-size: 1.15rem; padding-top: 6px"
+            id="kMes"
+          >
+            —
+          </div>
+          <div class="kpi-sub" id="kMesSub">—</div>
+        </div>
+        <div class="kpi c5">
+          <div class="kpi-ico">🏷️</div>
+          <div class="kpi-lbl">Categoria Principal</div>
+          <div
+            class="kpi-val"
+            style="font-size: 1.15rem; padding-top: 6px"
+            id="kCat"
+          >
+            —
+          </div>
+          <div class="kpi-sub" id="kCatSub">—</div>
+        </div>
+      </div>
+
+      <div class="sec-label">Resumo do Mês</div>
+      <div class="month-row">
+        <div class="mcard jul">
+          <div class="mcard-title">🗓 Julho</div>
+          <div class="mstat">
+            <span class="lbl">Total de chamados</span
+            ><span class="val" id="jul1">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Finalizados</span
+            ><span class="val" id="jul2">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Não finalizados</span
+            ><span class="val" id="jul3">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Horas gastas</span
+            ><span class="val" id="jul4">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Analista mais ativo</span
+            ><span class="val" id="jul5">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Categoria dominante</span
+            ><span class="val" id="jul6">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Dias úteis atendidos</span
+            ><span class="val" id="jul7">—</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-label">Análise de Dados — Julho</div>
+      <div class="g2">
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--accent)"></span>Volume de
+            Chamados
+          </h3>
+          <div class="cw"><canvas id="cVolume"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--accent2)"></span>Horas
+            Investidas
+          </h3>
+          <div class="cw"><canvas id="cHoras"></canvas></div>
+        </div>
+      </div>
+
+      <div class="g2">
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--accent3)"></span>Top 10
+            Categorias
+          </h3>
+          <div class="cw tall"><canvas id="cCats"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--accent4)"></span>Chamados
+            por Analista
+          </h3>
+          <div id="anaDiv" style="padding-top: 10px"></div>
+        </div>
+      </div>
+
+      <div class="g2">
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--accent5)"></span>Status
+            dos Chamados
+          </h3>
+          <div class="cw"><canvas id="cStatus"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--jul)"></span>Distribuição
+            por Categoria (Top 6)
+          </h3>
+          <div class="cw"><canvas id="cPizza"></canvas></div>
+        </div>
+      </div>
+
+      <div class="g2">
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--accent)"></span
+            >Comparativo das Categorias (Top 6)
+          </h3>
+          <div class="cw tall"><canvas id="cCompare"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--jul)"></span>Top 10
+            Solicitantes de Julho
+          </h3>
+          <div
+            id="topUsersList"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              padding-top: 8px;
+              overflow-y: auto;
+              height: 310px;
+            "
+          >
+            <!-- Preenchido via JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-label">Ranking de Categorias</div>
+      <div class="chart-card g1">
+        <h3>
+          <span class="dot" style="background: var(--accent2)"></span
+          >Detalhamento Completo
+        </h3>
+        <div class="tbl-wrap">
+          <table class="tbl" id="catTbl"></table>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Dashboard de Chamados · <span>G2NET Informática</span> · Julho 2026 ·
+      Desenvolvido por
+      <a
+        href="https://www.linkedin.com/in/guilhermepadial/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span>Guilherme Padial</span></a
+      >
+      · Analista de Suporte TI
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
