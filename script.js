@@ -261,7 +261,7 @@ const JUL = [
 ];
 
 // ════════════════════════════════════════════════════
-// DADOS REAIS — AGOSTO (G2NET - 199 registros)
+// DADOS REAIS — AGOSTO (G2NET - 215 registros)
 // ════════════════════════════════════════════════════
 const AGO = [
   { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
@@ -463,6 +463,22 @@ const AGO = [
   { cat: "Locaweb", fin: "SIM", h: 0.5, ana: "Leonardo" },
   { cat: "Polaris", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
   { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Luiz" },
+  { cat: "No-IP", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "Infra", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Backup", fin: "SIM", h: 0.5, ana: "Leonardo/Guilherme Padial" },
+  { cat: "Hardware", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Infra", fin: "SIM", h: 0.25, ana: "Leonardo/Luiz" },
+  { cat: "Infra", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo/Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Financeiro", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Exchange", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Software", fin: "SIM", h: 0.5, ana: "Leonardo" },
 ];
 
 // ════════════════════════════════════════════════════
