@@ -115,7 +115,7 @@ const JUL = [
   { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Luiz" },
   { cat: "LocalWeb", fin: "SIM", h: 1, ana: "Leonardo" },
-  { cat: "MS365", fin: "SIM", h: 4, ana: "Luiz/Guilherme melo" },
+  { cat: "MS365", fin: "SIM", h: 4, ana: "Luiz/Guilherme Melo" },
   { cat: "Infra", fin: "SIM", h: 1.5, ana: "Luiz/Leonardo" },
   { cat: "Infra", fin: "SIM", h: 2, ana: "Luiz" },
   { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
@@ -162,7 +162,7 @@ const JUL = [
   { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
   { cat: "Checklist", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
-  { cat: "MS365", fin: "SIM", h: 3, ana: "Leonardo/Melo" },
+  { cat: "MS365", fin: "SIM", h: 3, ana: "Leonardo/Guilherme Melo" },
   { cat: "MS365", fin: "SIM", h: 1, ana: "Luiz/Leonardo" },
   { cat: "No-IP", fin: "SIM", h: 0.5, ana: "Hamilton" },
   { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
@@ -261,6 +261,211 @@ const JUL = [
 ];
 
 // ════════════════════════════════════════════════════
+// DADOS REAIS — AGOSTO (G2NET - 199 registros)
+// ════════════════════════════════════════════════════
+const AGO = [
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 2, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Locaweb", fin: "SIM", h: 2, ana: "Luiz" },
+  { cat: "Visita", fin: "SIM", h: 2.5, ana: "Leonardo" },
+  { cat: "Financeiro", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "Whom", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Whom", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Impressora", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Guilherme Padial" },
+  { cat: "Software", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Locaweb", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "Locaweb", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Locaweb", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Locaweb", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "Zoho", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Financeiro", fin: "SIM", h: 1, ana: "Leonardo/Luiz" },
+  { cat: "Financeiro", fin: "SIM", h: 1, ana: "Leilton" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 2, ana: "Guilherme Melo" },
+  { cat: "Software", fin: "SIM", h: 0.5, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Câmera", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Câmera", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Financeiro", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "No-IP", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "Provisionamento de Usuário", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Infra", fin: "SIM", h: 2.5, ana: "Luiz" },
+  { cat: "Provisionamento de Usuário", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Software", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Locaweb", fin: "NÃO", h: 0.5, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Impressora", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Provisionamento de Usuário", fin: "SIM", h: 0.5, ana: "Leonardo/Guilherme Melo" },
+  { cat: "Backup", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Periférico", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Guilherme Padial" },
+  { cat: "Hardware", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Periférico", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Software", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "No-IP", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "No-IP", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Impressora", fin: "SIM", h: 2, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Guilherme Padial" },
+  { cat: "Zoho", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Sedex", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 2.5, ana: "Leonardo/Luiz" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo/Luiz" },
+  { cat: "Software", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Câmera", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Sedex", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 2.5, ana: "Luiz" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Windows", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Visita", fin: "SIM", h: 3, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 2, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Câmera", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Guilherme Padial" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Locaweb", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Visita", fin: "SIM", h: 3, ana: "Guilherme Padial" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Câmera", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Câmera", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Windows", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Visita", fin: "SIM", h: 3, ana: "Guilherme Padial" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Periférico", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 2, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 2, ana: "Luiz" },
+  { cat: "Equipamento", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Visita", fin: "SIM", h: 4, ana: "Leilton" },
+  { cat: "GI", fin: "SIM", h: 0.24, ana: "Guilherme Melo" },
+  { cat: "Equipamento", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Hardware", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Provisionamento de Usuário", fin: "SIM", h: 2.5, ana: "Leonardo/Guilherme Melo" },
+  { cat: "Inventário", fin: "SIM", h: 5, ana: "Leonardo/Luiz" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Validação", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Câmera", fin: "SIM", h: 2.5, ana: "Leonardo/Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Backup", fin: "SIM", h: 3, ana: "Leonardo/Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Migração", fin: "SIM", h: 2, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "No-IP", fin: "SIM", h: 0.25, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Guilherme Padial" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Guilherme Padial" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Visita", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Câmera", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Windows", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Polaris", fin: "SIM", h: 2.5, ana: "Leonardo" },
+  { cat: "Software", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.75, ana: "Luiz" },
+  { cat: "Software", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "RDG/RDP", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "Polaris", fin: "SIM", h: 1, ana: "Guilherme Melo" },
+  { cat: "Windows", fin: "SIM", h: 0.25, ana: "Guilherme Melo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "GI", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Hardware", fin: "SIM", h: 2, ana: "Luiz" },
+  { cat: "Impressora", fin: "SIM", h: 1, ana: "Leonardo" },
+  { cat: "Infra", fin: "NÃO", h: 1, ana: "Leonardo" },
+  { cat: "Polaris", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Hardware", fin: "SIM", h: 0.5, ana: "Leonardo/Luiz/Guilherme Melo" },
+  { cat: "GI", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "MS365", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Windows", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "MS365", fin: "SIM", h: 2, ana: "Luiz/Guilherme Padial" },
+  { cat: "Hardware", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Locaweb", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 1, ana: "Luiz" },
+  { cat: "MS365", fin: "SIM", h: 0.25, ana: "Luiz" },
+  { cat: "Backup", fin: "SIM", h: 1, ana: "Leonardo/Luiz" },
+  { cat: "MS365", fin: "SIM", h: 1.5, ana: "Leonardo" },
+  { cat: "Inventário", fin: "SIM", h: 3, ana: "Leonardo/Luiz" },
+  { cat: "Software", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Checklist", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Backup", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Backup", fin: "SIM", h: 0.5, ana: "Guilherme Melo" },
+  { cat: "Locaweb", fin: "SIM", h: 0.5, ana: "Leonardo" },
+  { cat: "Polaris", fin: "SIM", h: 1.5, ana: "Guilherme Melo" },
+  { cat: "Infra", fin: "SIM", h: 0.5, ana: "Leonardo" },
+];
+
+// ════════════════════════════════════════════════════
 // FUNÇÕES AUXILIARES (Modificada para não quebrar nomes)
 // ════════════════════════════════════════════════════
 const sumH = (a) => +a.reduce((s, r) => s + (r.h || 0), 0).toFixed(1);
@@ -303,44 +508,60 @@ function topKey(obj) {
   return sorted.length > 0 ? sorted[0][0] : "N/A";
 }
 
-// ════════════════════════════════════════════════════
-// CÁLCULOS (Apenas para Julho)
-// ════════════════════════════════════════════════════
-const total = JUL.length;
-const julFin = countFin(JUL, "SIM");
-const julNF = countFin(JUL, "NÃO");
-const taxa = total > 0 ? Math.round((julFin / total) * 100) : 0;
-const julH = sumH(JUL);
-
-const allCM = catMap(JUL);
-const allAM = anaMap(JUL);
-
-const top10 = topN(allCM, 10);
-const top6keys = topN(allCM, 6).map((e) => e[0]);
+function monthStats(arr) {
+  const total = arr.length;
+  const fin = countFin(arr, "SIM");
+  const nf = countFin(arr, "NÃO");
+  const taxa = total > 0 ? Math.round((fin / total) * 100) : 0;
+  const h = sumH(arr);
+  const cm = catMap(arr);
+  const am = anaMap(arr);
+  return { total, fin, nf, taxa, h, cm, am };
+}
 
 // ════════════════════════════════════════════════════
-// PREENCHER KPIs
+// CÁLCULOS (Julho + Agosto)
 // ════════════════════════════════════════════════════
-document.getElementById("kTotal").textContent = total;
-document.getElementById("kTaxa").textContent = taxa + "%";
-document.getElementById("kHoras").textContent = julH + "h";
-document.getElementById("kMes").textContent = topKey(allAM);
+const julStats = monthStats(JUL);
+const agoStats = monthStats(AGO);
+
+const ALL = JUL.concat(AGO);
+const allStats = monthStats(ALL);
+
+const top10 = topN(allStats.cm, 10);
+const top6keys = topN(allStats.cm, 6).map((e) => e[0]);
+
+// ════════════════════════════════════════════════════
+// PREENCHER KPIs (visão geral do período)
+// ════════════════════════════════════════════════════
+document.getElementById("kTotal").textContent = allStats.total;
+document.getElementById("kTaxa").textContent = allStats.taxa + "%";
+document.getElementById("kHoras").textContent = allStats.h + "h";
+document.getElementById("kMes").textContent = topKey(allStats.am);
 document.getElementById("kMesSub").textContent =
-  allAM[topKey(allAM)] + " chamados";
+  allStats.am[topKey(allStats.am)] + " chamados";
 document.getElementById("kCat").textContent = top10[0] ? top10[0][0] : "—";
 document.getElementById("kCatSub").textContent =
   (top10[0] ? top10[0][1] : 0) + " ocorrências";
 
 // ════════════════════════════════════════════════════
-// PREENCHER CARD MENSAL (Apenas Julho)
+// PREENCHER CARDS MENSAIS (Julho e Agosto)
 // ════════════════════════════════════════════════════
-document.getElementById("jul1").textContent = total;
-document.getElementById("jul2").textContent = julFin;
-document.getElementById("jul3").textContent = julNF;
-document.getElementById("jul4").textContent = julH + "h";
-document.getElementById("jul5").textContent = topKey(allAM);
-document.getElementById("jul6").textContent = topKey(allCM);
+document.getElementById("jul1").textContent = julStats.total;
+document.getElementById("jul2").textContent = julStats.fin;
+document.getElementById("jul3").textContent = julStats.nf;
+document.getElementById("jul4").textContent = julStats.h + "h";
+document.getElementById("jul5").textContent = topKey(julStats.am);
+document.getElementById("jul6").textContent = topKey(julStats.cm);
 document.getElementById("jul7").textContent = "22 dias úteis"; // Mude caso seja outro valor
+
+document.getElementById("ago1").textContent = agoStats.total;
+document.getElementById("ago2").textContent = agoStats.fin;
+document.getElementById("ago3").textContent = agoStats.nf;
+document.getElementById("ago4").textContent = agoStats.h + "h";
+document.getElementById("ago5").textContent = topKey(agoStats.am);
+document.getElementById("ago6").textContent = topKey(agoStats.cm);
+document.getElementById("ago7").textContent = "21 dias úteis"; // Mude caso seja outro valor
 
 // ════════════════════════════════════════════════════
 // CHART.JS — CONFIGURAÇÕES GLOBAIS
@@ -351,17 +572,18 @@ Chart.defaults.font.size = 12;
 
 const grid = "rgba(0,0,0,0.05)";
 const julC = "#00aeef"; // Cor de destaque do dashboard (Ciano da G2NET)
+const agoC = "#6366f1"; // Cor de destaque para Agosto (índigo)
 
 // ─── VOLUME POR MÊS ──────────────────────────────
 new Chart(document.getElementById("cVolume"), {
   type: "bar",
   data: {
-    labels: ["Julho"],
+    labels: ["Julho", "Agosto"],
     datasets: [
       {
         label: "Chamados",
-        data: [total],
-        backgroundColor: [julC],
+        data: [julStats.total, agoStats.total],
+        backgroundColor: [julC, agoC],
         borderRadius: 8,
         borderSkipped: false,
       },
@@ -382,12 +604,12 @@ new Chart(document.getElementById("cVolume"), {
 new Chart(document.getElementById("cHoras"), {
   type: "bar",
   data: {
-    labels: ["Julho"],
+    labels: ["Julho", "Agosto"],
     datasets: [
       {
         label: "Horas",
-        data: [julH],
-        backgroundColor: ["rgba(0,174,239,.85)"],
+        data: [julStats.h, agoStats.h],
+        backgroundColor: ["rgba(0,174,239,.85)", "rgba(99,102,241,.85)"],
         borderRadius: 8,
         borderSkipped: false,
       },
@@ -404,7 +626,7 @@ new Chart(document.getElementById("cHoras"), {
   },
 });
 
-// ─── TOP 10 CATEGORIAS ───────────────────────────
+// ─── TOP 10 CATEGORIAS (Julho + Agosto) ──────────
 new Chart(document.getElementById("cCats"), {
   type: "bar",
   data: {
@@ -442,9 +664,9 @@ new Chart(document.getElementById("cCats"), {
   },
 });
 
-// ─── ANALISTAS — BARRAS CUSTOMIZADAS ─────────────
+// ─── ANALISTAS — BARRAS CUSTOMIZADAS (Julho + Agosto) ─
 const anaDiv = document.getElementById("anaDiv");
-const anaMax = Math.max(...Object.values(allAM));
+const anaMax = Math.max(...Object.values(allStats.am));
 const anaColors = [
   "#0284c7",
   "#0ea5e9",
@@ -456,7 +678,7 @@ const anaColors = [
 let anaIdx = 0;
 
 anaDiv.innerHTML = "";
-Object.entries(allAM)
+Object.entries(allStats.am)
   .sort((a, b) => b[1] - a[1])
   .forEach(([nome, qtd]) => {
     const pct = Math.round((qtd / anaMax) * 100);
@@ -474,18 +696,18 @@ Object.entries(allAM)
 new Chart(document.getElementById("cStatus"), {
   type: "bar",
   data: {
-    labels: ["Julho"],
+    labels: ["Julho", "Agosto"],
     datasets: [
       {
         label: "Finalizados",
-        data: [julFin],
+        data: [julStats.fin, agoStats.fin],
         backgroundColor: "#0ea5e9",
         borderRadius: 6,
         borderSkipped: false,
       },
       {
         label: "Não Finalizados",
-        data: [julNF],
+        data: [julStats.nf, agoStats.nf],
         backgroundColor: "#ef4444",
         borderRadius: 6,
         borderSkipped: false,
@@ -505,8 +727,8 @@ new Chart(document.getElementById("cStatus"), {
   },
 });
 
-// ─── PIZZA — TOP 6 CATEGORIAS ────────────────────
-const top6data = top6keys.map((k) => allCM[k] || 0);
+// ─── PIZZA — TOP 6 CATEGORIAS (Julho + Agosto) ───
+const top6data = top6keys.map((k) => allStats.cm[k] || 0);
 const pizzaColors = [
   "#0284c7",
   "#0ea5e9",
@@ -543,7 +765,7 @@ new Chart(document.getElementById("cPizza"), {
   },
 });
 
-// ─── COMPARATIVO MENSAL TOP 6 ────────────────────
+// ─── COMPARATIVO MENSAL TOP 6 (Julho x Agosto) ───
 new Chart(document.getElementById("cCompare"), {
   type: "bar",
   data: {
@@ -551,8 +773,15 @@ new Chart(document.getElementById("cCompare"), {
     datasets: [
       {
         label: "Julho",
-        data: top6keys.map((k) => allCM[k] || 0),
+        data: top6keys.map((k) => julStats.cm[k] || 0),
         backgroundColor: julC,
+        borderRadius: 5,
+        borderSkipped: false,
+      },
+      {
+        label: "Agosto",
+        data: top6keys.map((k) => agoStats.cm[k] || 0),
+        backgroundColor: agoC,
         borderRadius: 5,
         borderSkipped: false,
       },
@@ -585,36 +814,52 @@ const topUsersData = [
   ["Michele (OCP)", 4],
 ];
 
-const topUsersDiv = document.getElementById("topUsersList");
-if (topUsersDiv) {
-  const userMax = topUsersData[0][1];
-  const userColor = julC;
+const topUsersDataAgo = [
+  ["Rogério (Pimentel)", 11],
+  ["Juliana (Acreditando)", 7],
+  ["Fabio (Bar34)", 7],
+  ["Jessica (OCP)", 6],
+  ["Leonardo Silva (Martinelli)", 6],
+  ["Thiago (OCP)", 5],
+  ["Rosangella (TGT)", 4],
+  ["Ediana (Gino)", 4],
+  ["Zeca (OCP)", 4],
+  ["João (TGT)", 4],
+];
 
-  topUsersDiv.innerHTML = "";
-  topUsersData.forEach(([nome, qtd], index) => {
-    const pct = Math.round((qtd / userMax) * 100);
-    topUsersDiv.innerHTML += `
+function renderTopUsers(divId, data, color) {
+  const div = document.getElementById(divId);
+  if (!div) return;
+  const max = data[0][1];
+  div.innerHTML = "";
+  data.forEach(([nome, qtd], index) => {
+    const pct = Math.round((qtd / max) * 100);
+    div.innerHTML += `
     <div class="ana-row">
       <div class="ana-name" style="width: 175px; font-weight: ${index < 3 ? "700" : "normal"}; color: ${index < 3 ? "var(--text)" : "var(--muted)"};">
         ${index + 1}º ${nome}
       </div>
       <div class="ana-track">
-        <div class="ana-fill" style="width:${pct}%;background:${userColor}">${qtd}</div>
+        <div class="ana-fill" style="width:${pct}%;background:${color}">${qtd}</div>
       </div>
-      <div class="ana-count" style="color:${userColor}">${qtd}</div>
+      <div class="ana-count" style="color:${color}">${qtd}</div>
     </div>`;
   });
 }
 
+renderTopUsers("topUsersList", topUsersData, julC);
+renderTopUsers("topUsersListAgo", topUsersDataAgo, agoC);
+
 // ─── TABELA: RANKING DE CATEGORIAS ───────────────
 (function buildTable() {
-  const allCats = Object.keys(allCM);
+  const allCats = Object.keys(allStats.cm);
 
   const rows = allCats
     .map((cat) => ({
       cat,
-      jul: allCM[cat] || 0,
-      tot: allCM[cat] || 0,
+      jul: julStats.cm[cat] || 0,
+      ago: agoStats.cm[cat] || 0,
+      tot: allStats.cm[cat] || 0,
     }))
     .sort((a, b) => b.tot - a.tot); // Todas as categorias
 
@@ -627,6 +872,7 @@ if (topUsersDiv) {
         <th>#</th>
         <th>Categoria</th>
         <th>Julho</th>
+        <th>Agosto</th>
         <th>Total</th>
         <th>Distribuição</th>
       </tr>
@@ -639,6 +885,7 @@ if (topUsersDiv) {
           <td style="color:var(--muted);font-weight:800">${i + 1}</td>
           <td style="font-weight:600">${r.cat}</td>
           <td>${r.jul > 0 ? `<span class="pill jul">${r.jul}</span>` : "—"}</td>
+          <td>${r.ago > 0 ? `<span class="pill ago">${r.ago}</span>` : "—"}</td>
           <td style="font-weight:800;color:var(--text)">${r.tot}</td>
           <td>
             <div style="background:var(--card2);border-radius:4px;height:6px;width:120px;overflow:hidden;display:inline-block;vertical-align:middle">
