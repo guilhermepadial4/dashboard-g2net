@@ -16,6 +16,7 @@
 
   --jul: #00aeef; /* Usando o Ciano para o card de Julho */
   --ago: #6366f1; /* Índigo para o card de Agosto */
+  --set: #14b8a6; /* Verde-azulado para o card de Setembro */
 }
 
 * {
@@ -226,6 +227,9 @@ header {
 .mcard.ago {
   border-top-color: var(--ago);
 }
+.mcard.set {
+  border-top-color: var(--set);
+}
 
 .mcard-title {
   font-size: 0.72rem;
@@ -237,6 +241,9 @@ header {
 }
 .mcard.ago .mcard-title {
   color: var(--ago);
+}
+.mcard.set .mcard-title {
+  color: var(--set);
 }
 
 .mstat {
@@ -264,6 +271,12 @@ header {
 .g2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.g3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   margin-bottom: 14px;
 }
@@ -417,6 +430,10 @@ header {
   background: rgba(99, 102, 241, 0.11);
   color: var(--ago);
 }
+.pill.set {
+  background: rgba(20, 184, 166, 0.11);
+  color: var(--set);
+}
 
 /* ── FOOTER ──────────────────────────────── */
 footer {
@@ -451,6 +468,9 @@ footer a {
   .mcard {
     max-width: 100%;
   }
+  .g3 {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 860px) {
   .wrap {
@@ -472,6 +492,9 @@ footer a {
   }
   .g2 {
     grid-template-columns: 1fr;
+  }
+  .month-row {
+    flex-direction: column;
   }
   .cw {
     height: 210px;

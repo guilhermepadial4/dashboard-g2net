@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard de Chamados TI — Julho e Agosto 2026 - G2NET</title>
+    <title>Dashboard de Chamados TI — Julho a Setembro 2026 - G2NET</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   </head>
@@ -21,7 +21,7 @@
           <p>Acompanhamento de atendimentos · Equipe de Suporte Técnico</p>
         </div>
       </div>
-      <div class="period-pill">Período: <span>Julho – Agosto 2026</span></div>
+      <div class="period-pill">Período: <span>Julho – Setembro 2026</span></div>
     </header>
 
     <div class="wrap">
@@ -31,7 +31,7 @@
           <div class="kpi-ico">🎫</div>
           <div class="kpi-lbl">Total de Chamados</div>
           <div class="kpi-val" id="kTotal">—</div>
-          <div class="kpi-sub">julho + agosto</div>
+          <div class="kpi-sub">julho a setembro</div>
         </div>
         <div class="kpi c2">
           <div class="kpi-ico">✅</div>
@@ -135,9 +135,40 @@
             ><span class="val" id="ago7">—</span>
           </div>
         </div>
+        <div class="mcard set">
+          <div class="mcard-title">🗓 Setembro</div>
+          <div class="mstat">
+            <span class="lbl">Total de chamados</span
+            ><span class="val" id="set1">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Finalizados</span
+            ><span class="val" id="set2">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Não finalizados</span
+            ><span class="val" id="set3">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Horas gastas</span
+            ><span class="val" id="set4">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Analista mais ativo</span
+            ><span class="val" id="set5">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Categoria dominante</span
+            ><span class="val" id="set6">—</span>
+          </div>
+          <div class="mstat">
+            <span class="lbl">Dias úteis atendidos</span
+            ><span class="val" id="set7">—</span>
+          </div>
+        </div>
       </div>
 
-      <div class="sec-label">Análise de Dados — Julho e Agosto</div>
+      <div class="sec-label">Análise de Dados — Julho a Setembro</div>
       <div class="g2">
         <div class="chart-card">
           <h3>
@@ -192,12 +223,12 @@
       <div class="chart-card g1">
         <h3>
           <span class="dot" style="background: var(--accent)"></span
-          >Comparativo das Categorias (Top 6) — Julho x Agosto
+          >Comparativo das Categorias (Top 6) — Julho x Agosto x Setembro
         </h3>
         <div class="cw tall"><canvas id="cCompare"></canvas></div>
       </div>
 
-      <div class="g2">
+      <div class="g3">
         <div class="chart-card">
           <h3>
             <span class="dot" style="background: var(--jul)"></span>Top 10
@@ -237,6 +268,26 @@
             <!-- Preenchido via JS -->
           </div>
         </div>
+
+        <div class="chart-card">
+          <h3>
+            <span class="dot" style="background: var(--set)"></span>Top 10
+            Solicitantes de Setembro
+          </h3>
+          <div
+            id="topUsersListSet"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              padding-top: 8px;
+              overflow-y: auto;
+              height: 310px;
+            "
+          >
+            <!-- Preenchido via JS -->
+          </div>
+        </div>
       </div>
 
       <div class="sec-label">Ranking de Categorias</div>
@@ -252,7 +303,7 @@
     </div>
 
     <footer>
-      Dashboard de Chamados · <span>G2NET Informática</span> · Julho - Agosto
+      Dashboard de Chamados · <span>G2NET Informática</span> · Julho - Setembro
       2026 · Desenvolvido por
       <a
         href="https://www.linkedin.com/in/guilhermepadial/"
