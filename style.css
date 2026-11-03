@@ -17,6 +17,7 @@
   --jul: #00aeef; /* Usando o Ciano para o card de Julho */
   --ago: #6366f1; /* Índigo para o card de Agosto */
   --set: #14b8a6; /* Verde-azulado para o card de Setembro */
+  --out: #f59e0b; /* Âmbar para o card de Outubro */
 }
 
 * {
@@ -230,6 +231,9 @@ header {
 .mcard.set {
   border-top-color: var(--set);
 }
+.mcard.out {
+  border-top-color: var(--out);
+}
 
 .mcard-title {
   font-size: 0.72rem;
@@ -244,6 +248,9 @@ header {
 }
 .mcard.set .mcard-title {
   color: var(--set);
+}
+.mcard.out .mcard-title {
+  color: var(--out);
 }
 
 .mstat {
@@ -277,6 +284,12 @@ header {
 .g3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.g4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin-bottom: 14px;
 }
@@ -434,6 +447,10 @@ header {
   background: rgba(20, 184, 166, 0.11);
   color: var(--set);
 }
+.pill.out {
+  background: rgba(245, 158, 11, 0.11);
+  color: var(--out);
+}
 
 /* ── FOOTER ──────────────────────────────── */
 footer {
@@ -468,7 +485,8 @@ footer a {
   .mcard {
     max-width: 100%;
   }
-  .g3 {
+  .g3,
+  .g4 {
     grid-template-columns: 1fr;
   }
 }
